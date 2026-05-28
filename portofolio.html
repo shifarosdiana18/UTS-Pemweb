@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio website Shifa Rosdiana - Front-End Developer & UI Designer" />
+
+  <title>Shifa | Portfolio Website</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="portofolio.css" />
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- PLANET PNG -->
+  <img src="assets/images/space-bg.png" class="planet-bg" alt="Space Background">
+
+  <!-- STARS -->
+  <div class="stars" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <div class="shooting-star star-1"></div>
+    <div class="shooting-star star-2"></div>
+  </div>
+
+  <header class="hero">
+
+    <!-- NAVBAR -->
+    <nav class="navbar" aria-label="Main Navigation">
+
+      <!-- HAMBURGER -->
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" role="button" tabindex="0">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- MENU -->
+      <div class="nav-links" id="nav-links">
+        <a href="#tentang">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#riwayat">Education</a>
+        <a href="#riwayat">Experience</a>
+        <a href="#projects">Project</a>
+        <a href="#kontak">Contact</a>
+      </div>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+    </nav>
+
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
+
+      <img src="assets/images/foto (2).jpg" alt="Foto Shifa" class="hero-img">
+
+      <h1>Shifa Rosdiana</h1>
+
+      <p class="typing"></p>
+
+      <p class="hero-quote">
+        A passionate Front-End Developer & UI Designer, dedicated to crafting clean,
+        responsive, and visually engaging web experiences.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="assets/cv/CV-Shifa.pdf" download class="hero-btn primary-btn">
+          <i class="fa-solid fa-download"></i>
+          Show CV
+        </a>
+
+        <a href="#kontak" class="hero-btn secondary-btn">
+          <i class="fa-solid fa-paper-plane"></i>
+          Contact me
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- ========================= -->
+    <!-- ABOUT -->
+    <!-- ========================= -->
+
+    <section id="tentang" class="about section">
+
+      <div class="about-image reveal">
+        <img src="assets/images/foto (2).jpg" alt="Foto Shifa">
+      </div>
+
+      <div class="about-content reveal">
+
+        <h2>About Me</h2>
+
+        <p>
+          Saya adalah seorang mahasiswa <span>Sistem Informasi</span>
+          dari <span>Universitas Internasional Semen Indonesia</span> yang
+          memiliki ketertarikan besar pada dunia web development,
+          UI/UX design, dan teknologi digital modern.
+        </p>
+
+        <p>
+          Saya terus mengembangkan kemampuan front-end
+          development melalui berbagai proyek akademik
+          dan pembelajaran mandiri untuk menjadi
+          Web Developer profesional.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- CERTIFICATIONS -->
+    <!-- ========================= -->
+
+    <div class="certification-wrapper">
+
+      <div class="certification-track">
+
+        <div class="certification-card">
+          <h3>Microsoft</h3>
+          <p>Microsoft Office Specialist</p>
+        </div>
+
+        <div class="certification-card">
+          <h3>Microsoft</h3>
+          <p>Azure AI Fundamentals</p>
+        </div>
+
+        <div class="certification-card">
+          <h3>BNSP</h3>
+          <p>Junior Web Developer</p>
+        </div>
+
+        <div class="certification-card">
+          <h3>BNSP</h3>
+          <p>UI/UX Design</p>
+        </div>
+
+        <!-- DUPLIKAT BIAR LOOP SMOOTH -->
+
+        <div class="certification-card">
+          <h3>Microsoft</h3>
+          <p>Microsoft Office Specialist</p>
+        </div>
+
+        <div class="certification-card">
+          <h3>Microsoft</h3>
+          <p>Azure AI Fundamentals</p>
+        </div>
+
+        <div class="certification-card">
+          <h3>BNSP</h3>
+          <p>Junior Web Developer</p>
+        </div>
+
+        <div class="certification-card">
+          <h3>BNSP</h3>
+          <p>UI/UX Design</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- SKILLS -->
+    <!-- ========================= -->
+
+    <section id="skills" class="skills section">
+
+      <div class="section-title reveal">
+        <h2>Skills Showcase</h2>
+      </div>
+
+      <!-- TAB BUTTON -->
+      <div class="skills-tabs">
+
+        <button class="tab-btn active" data-tab="tech">
+          Tech Stack
+        </button>
+
+        <button class="tab-btn" data-tab="tools">
+          Tools
+        </button>
+
+        <button class="tab-btn" data-tab="soft">
+          Soft Skills
+        </button>
+
+      </div>
+
+      <!-- TECH STACK -->
+      <div class="tab-content active" id="tech">
+
+        <div class="skills-grid">
+
+          <!-- HTML -->
+          <div class="skill-app html-card">
+            <div class="app-header">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML</span>
+            </div>
+            <div class="app-preview code-window">
+<pre><code>
+&lt;section&gt;
+  &lt;h1&gt;Hello&lt;/h1&gt;
+&lt;/section&gt;
+</code></pre>
+            </div>
+            <h3>HTML</h3>
+            <p>Markup Language</p>
+          </div>
+
+          <!-- CSS -->
+          <div class="skill-app css-card">
+            <div class="app-header">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS</span>
+            </div>
+            <div class="app-preview code-window">
+<pre><code>
+.container{
+ display:flex;
+ align-items:center;
+}
+</code></pre>
+            </div>
+            <h3>CSS</h3>
+            <p>Styling Language</p>
+          </div>
+
+          <!-- JS -->
+          <div class="skill-app js-card">
+            <div class="app-header">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="app-preview code-window">
+<pre><code>
+function hello(){
+ console.log("Hi");
+}
+</code></pre>
+            </div>
+            <h3>JavaScript</h3>
+            <p>Programming Language</p>
+          </div>
+
+          <!-- JAVA -->
+          <div class="skill-app java-card">
+            <div class="app-header">
+              <i class="devicon-java-plain colored"></i>
+              <span>Java</span>
+            </div>
+            <div class="app-preview code-window">
+<pre><code>
+class Main{
+ public static void
+ main(String[] args){}
+}
+</code></pre>
+            </div>
+            <h3>Java</h3>
+            <p>Programming Language</p>
+          </div>
+
+          <!-- PYTHON -->
+          <div class="skill-app python-card">
+            <div class="app-header">
+              <i class="devicon-python-plain colored"></i>
+              <span>Python</span>
+            </div>
+            <div class="app-preview code-window">
+<pre><code>
+def hello():
+ print("Hello")
+</code></pre>
+            </div>
+            <h3>Python</h3>
+            <p>Programming Language</p>
+          </div>
+
+          <!-- MYSQL -->
+          <div class="skill-app mysql-card">
+            <div class="app-header">
+              <i class="devicon-mysql-plain colored"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="app-preview code-window">
+<pre><code>
+SELECT * FROM
+users;
+</code></pre>
+            </div>
+            <h3>MySQL</h3>
+            <p>Database Management</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- TOOLS -->
+      <div class="tab-content" id="tools">
+
+        <div class="tools-grid">
+
+          <div class="tool-card">
+            <img src="assets/images/vscode.jpg" alt="VS Code">
+            <h3>VS Code</h3>
+            <p>Code Editor</p>
+          </div>
+
+          <div class="tool-card">
+            <img src="assets/images/figma.jpg" alt="Figma">
+            <h3>Figma</h3>
+            <p>UI/UX Design Tool</p>
+          </div>
+
+          <div class="tool-card">
+            <img src="assets/images/github.jpg" alt="GitHub">
+            <h3>GitHub</h3>
+            <p>Version Control</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- SOFT SKILLS -->
+      <div class="tab-content" id="soft">
+
+        <div class="soft-buttons">
+          <button>Teamwork</button>
+          <button>Critical Thinking</button>
+          <button>Creativity</button>
+          <button>Problem Solving</button>
+          <button>Communication</button>
+          <button>Time Management</button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- PENDIDIKAN & EXPERIENCE -->
+    <!-- ========================= -->
+
+    <section class="education-experience" id="riwayat">
+
+      <div class="section-title reveal">
+        <h2>Education <span>& Experience</span></h2>
+      </div>
+
+      <!-- TIMELINE PENDIDIKAN -->
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-icon">🎓</div>
+          <div class="timeline-card">
+            <span class="badge">Pendidikan</span>
+            <h3>SMA Assaadah Gresik | IPA</h3>
+            <p>2021 - 2024</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon">🏫</div>
+          <div class="timeline-card">
+            <span class="badge">S1</span>
+            <h3>Universitas Internasional Semen Indonesia | Sistem Informasi</h3>
+            <p>2024 - Now</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- EXPERIENCE SLIDER -->
+      <div class="experience-section">
+
+        <div class="experience-wrapper">
+
+          <div class="experience-track">
+
+            <div class="experience-card">
+              💼 Instructor Committee
+            </div>
+
+            <div class="experience-card active">
+              💼 Kesekretariatan
+            </div>
+
+            <div class="experience-card">
+              💼 Front-End Developer
+            </div>
+
+            <div class="experience-card">
+              💼 UI/UX Design
+            </div>
+
+            <!-- DUPLIKAT -->
+
+            <div class="experience-card">
+              💼 Instructor Committee
+            </div>
+
+            <div class="experience-card active">
+              💼 Kesekretariatan
+            </div>
+
+            <div class="experience-card">
+              💼 Front-End Developer
+            </div>
+
+            <div class="experience-card">
+              💼 UI/UX Design
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- PROYEK -->
+    <!-- ========================= -->
+
+    <section class="projects-section" id="projects">
+
+      <div class="section-title reveal">
+        <h2>Project</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- SPOTIFY -->
+        <div class="project-card vertical">
+          <div class="project-image"></div>
+          <img src="assets/images/spotify-analysis.png" alt="Spotify Analysis Project" loading="lazy">
+          <div class="project-overlay">
+            <h3>Spotify Analysis</h3>
+            <p>Interactive dashboard visualization for Spotify popularity trends.</p>
+          </div>
+        </div>
+
+        <!-- UI DESIGN -->
+        <div class="project-card vertical">
+          <div class="project-image"></div>
+          <img src="assets/images/ui-design.png" alt="Mobile App UI Design" loading="lazy">
+          <div class="project-overlay">
+            <h3>Mobile App UI</h3>
+            <p>Modern UI/UX mobile design with aesthetic and clean interface.</p>
+          </div>
+        </div>
+
+        <!-- LANDING PAGE -->
+        <div class="project-card vertical">
+          <div class="project-image"></div>
+          <img src="assets/images/landing-page.png" alt="Creative Landing Page" loading="lazy">
+          <div class="project-overlay">
+            <h3>Creative Landing Page</h3>
+            <p>Responsive landing page with smooth animation and modern layout.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="show-more-wrapper">
+        <button id="showProjectsBtn">Lihat Semua Proyek</button>
+      </div>
+
+      <div class="hidden-projects" id="hiddenProjects">
+
+        <!-- MIMI MAZE -->
+        <div class="project-card mimi-card horizontal">
+          <div class="project-image"></div>
+          <img src="assets/images/mimi-maze.png" alt="Mimi Secret Maze Game" loading="lazy">
+          <div class="project-overlay">
+            <h3>Mimi Secret Maze</h3>
+            <p>2D maze adventure game with puzzle mechanics and fun gameplay.</p>
+          </div>
+        </div>
+
+        <!-- PORTFOLIO -->
+        <div class="project-card horizontal">
+          <div class="project-image"></div>
+          <img src="assets/images/portofolio.png" alt="Portfolio Website">
+          <div class="project-overlay">
+            <h3>Personal Portfolio</h3>
+            <p>
+              Interactive portfolio website with modern UI, dark mode, smooth animation,
+              and responsive design.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- KONTAK -->
+    <!-- ========================= -->
+
+    <section id="kontak" class="contact section">
+
+      <div class="section-title reveal">
+        <h2>Contact Me</h2>
+      </div>
+
+      <div class="contact-container">
+
+        <form
+          action="https://formsubmit.co/shifa.rosdiana24@student.uisi.ac.id"
+          method="POST"
+          class="contact-form reveal"
+        >
+
+          <input type="text" name="nama" placeholder="Nama" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="pesan" placeholder="Pesan" required></textarea>
+          <input type="hidden" name="_captcha" value="false">
+
+          <button type="submit" id="submitBtn">Kirim Pesan</button>
+
+        </form>
+
+        <!-- SOCIAL -->
+        <div class="contact-info reveal">
+
+          <a href="https://github.com/shifarosdiana18" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+          </a>
+
+          <a href="https://www.linkedin.com/in/shifa-rosdiana-407147338/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn
+          </a>
+
+          <a href="https://www.instagram.com/syifarna_/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram
+          </a>
+
+          <a href="https://wa.me/6285732533271" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ========================= -->
+  <!-- FOOTER -->
+  <!-- ========================= -->
+
+  <footer>
+    <p>Designed & Developed by Shifa Rosdiana</p>
+    <p>© 2026 Portfolio Website</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="portofolio.js"></script>
+
+</body>
+
+</html>
